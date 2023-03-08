@@ -1,19 +1,27 @@
+
 $radius: 10px;
 
 .card {
-  border: 2px solid #0b5ed7;
+  border: 2px solid #693f8d;
   border-radius: $radius;
+
 }
 
 .content {
   padding: 10px;
+  
 }
 
 .img {
+  z-index:2 ;
   border-radius: $radius $radius 0 0;
+  transition: transform .2s;
 }
-
+.img :hover{
+  transform: scale(2);
+}
 .badge {
+  z-index: 3;
   top: 10px;
   right: 20px;
   font-size: 17px;

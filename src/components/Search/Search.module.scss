@@ -1,6 +1,6 @@
 .input {
     width: 40%;
-    border: 2px solid #0b5ed7;
+    border: 2px solid #693f8d;
     border-radius: 8px;
     box-shadow: 1px 3px 9px rgba($color: #000000, $alpha: 0.25);
     padding: 10px 15px;
@@ -11,6 +11,8 @@
   
   .btn {
     box-shadow: 1px 3px 9px rgba($color: #000000, $alpha: 0.25);
+    background-color: #693f8d;
+  
   }
   @media (max-width: 576px) {
     .input {

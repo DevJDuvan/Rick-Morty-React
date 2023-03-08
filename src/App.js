@@ -3,13 +3,15 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap";
 import "./App.scss";
 import React, { useState, useEffect } from "react";
-
+import Pagination from "./components/Pagination/Pagination";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Search from "./components/Search/Search";
 import Filter from "./components/Filter/Filter";
 import Card from "./components/Card/Card";
-
+import Episodes from "./Pages/Episodes";
+import Location from "./Pages/Location";
+import CardDetails from "./components/Card/CardDetails";
 
 function App() {
     return (
@@ -17,8 +19,17 @@ function App() {
         <div className="App">
           <Navbar />
         </div>
-        <Routes>
           <Route path="/" element={<Home />} />
+          <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/:id" element={<CardDetails />} />
+
+        <Route path="/episodes" element={<Episodes />} />
+        <Route path="/episodes/:id" element={<CardDetails />} />
+
+        <Route path="/location" element={<Location />} />
+        <Route path="/location/:id" element={<CardDetails />} />
+    
         </Routes>
       </Router>
     );
