@@ -28,7 +28,7 @@ const Location = () => {
     <div className="container">
       <div className="row mb-3">
         <h1 className="text-center mb-3">
-          Location :
+          Ubicacion :
           <span className="text-primary">
             {" "}
             {name === "" ? "Unknown" : name}
