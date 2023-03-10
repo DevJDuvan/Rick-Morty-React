@@ -1,7 +1,7 @@
 # Rick-Morty-React
 
 # app desplegada
-[Link](fantastic-otter-51b890.netlify.app).
+[APP DESPLEGADA](fantastic-otter-51b890.netlify.app).
 
 
 |Image|Image|
